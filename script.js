@@ -5,4 +5,4 @@ setInterval(() => {
   console.log("Passei no timeout!");
   console.log(LS.order);
   console.log(document.cookie);
-}, 500);
+}, 10000);
