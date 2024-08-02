@@ -4,6 +4,8 @@ function getCookie(name) {
   });
 }
 
+console.log("cheguei até aqui!");
+
 var timer = setInterval(function() {
   var cart = LS.cart;
 
