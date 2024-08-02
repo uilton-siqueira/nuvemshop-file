@@ -4,7 +4,7 @@ function getCookie(name) {
   });
 }
 
-var timer = setTimeout(function() {
+var timer = setInterval(function() {
   var cart = LS.cart;
 
   if (cart) {
@@ -29,6 +29,8 @@ var timer = setTimeout(function() {
       return;
     }
 
+    console.log("trackingSessionId: ", trackingSessionId);
+    console.log("orderId: ", cart.id);
     var body = {
       trackingSessionId: trackingSessionId,
       orderId: cart.id
